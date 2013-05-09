@@ -14,7 +14,24 @@
   <div ng-view></div>
 
   <div>Angular seed app: v<span app-version></span></div>
+ <div ng-controller="SumCtrl">
+ <a href="" ng-click="change()">change</a>
 
+{{q}}
+=<form ng-submit="sum()">
+        <input type="text" ng-model="total"  size="30"
+               placeholder="add new todo here">
+        <input class="btn-primary" type="submit" value="add">
+      </form>
+<hr/>
+{{res}}.use time {{count_time}}
+<hr/>
+<ul>
+<li ng-repeat="r in list">
+{{r}}
+</li>
+</ul>
+</div>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
   -->
